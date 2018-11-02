@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea16 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title16 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea17 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title17 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea18 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title18 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormStatistics));
             this.dataGridViewFrequencyTable = new System.Windows.Forms.DataGridView();
             this.Title = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -171,8 +171,8 @@
             this.dataGridViewFrequencyTable.AllowUserToDeleteRows = false;
             this.dataGridViewFrequencyTable.AllowUserToResizeColumns = false;
             this.dataGridViewFrequencyTable.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dataGridViewFrequencyTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dataGridViewFrequencyTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
             this.dataGridViewFrequencyTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewFrequencyTable.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewFrequencyTable.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -183,18 +183,18 @@
             this.dataGridViewFrequencyTable.Location = new System.Drawing.Point(12, 121);
             this.dataGridViewFrequencyTable.Name = "dataGridViewFrequencyTable";
             this.dataGridViewFrequencyTable.ReadOnly = true;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewFrequencyTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle23.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle23.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewFrequencyTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this.dataGridViewFrequencyTable.RowHeadersVisible = false;
             this.dataGridViewFrequencyTable.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dataGridViewFrequencyTable.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dataGridViewFrequencyTable.RowsDefaultCellStyle = dataGridViewCellStyle24;
             this.dataGridViewFrequencyTable.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dataGridViewFrequencyTable.RowTemplate.Height = 23;
             this.dataGridViewFrequencyTable.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
@@ -204,8 +204,8 @@
             // Title
             // 
             this.Title.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Title.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Title.DefaultCellStyle = dataGridViewCellStyle22;
             this.Title.FillWeight = 200F;
             this.Title.HeaderText = "Title";
             this.Title.Name = "Title";
@@ -352,103 +352,105 @@
             // 
             this.chartFrequencyHistogram.BorderlineColor = System.Drawing.Color.Black;
             this.chartFrequencyHistogram.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea4.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
-            chartArea4.AxisX.MaximumAutoSize = 65F;
-            chartArea4.AxisX.ScaleBreakStyle.Enabled = true;
-            chartArea4.AxisX.ScaleBreakStyle.LineWidth = 5;
-            chartArea4.AxisX.ScaleView.MinSizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea4.AxisX.ScaleView.Size = 7D;
-            chartArea4.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            chartArea4.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll;
-            chartArea4.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            chartArea4.AxisX.ScrollBar.Size = 20D;
-            chartArea4.Name = "ChartAreaFrequencyHistogram";
-            this.chartFrequencyHistogram.ChartAreas.Add(chartArea4);
+            chartArea16.AlignmentOrientation = System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal;
+            chartArea16.AxisX.MaximumAutoSize = 65F;
+            chartArea16.AxisX.ScaleBreakStyle.Enabled = true;
+            chartArea16.AxisX.ScaleBreakStyle.LineWidth = 5;
+            chartArea16.AxisX.ScaleView.MinSizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea16.AxisX.ScaleView.Size = 7D;
+            chartArea16.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            chartArea16.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll;
+            chartArea16.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            chartArea16.AxisX.ScrollBar.Size = 20D;
+            chartArea16.Name = "ChartAreaFrequencyHistogram";
+            this.chartFrequencyHistogram.ChartAreas.Add(chartArea16);
             this.chartFrequencyHistogram.Location = new System.Drawing.Point(12, 200);
             this.chartFrequencyHistogram.Name = "chartFrequencyHistogram";
-            series4.ChartArea = "ChartAreaFrequencyHistogram";
-            series4.Name = "Frequency histogram";
-            series4.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series4.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            this.chartFrequencyHistogram.Series.Add(series4);
+            series16.ChartArea = "ChartAreaFrequencyHistogram";
+            series16.Name = "Frequency histogram";
+            series16.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series16.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            this.chartFrequencyHistogram.Series.Add(series16);
             this.chartFrequencyHistogram.Size = new System.Drawing.Size(245, 259);
             this.chartFrequencyHistogram.TabIndex = 13;
             this.chartFrequencyHistogram.Text = "chartFrequencyHistogram";
-            title4.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title4.Name = "titleFrequencyHistogram";
-            title4.Text = "Гістограма";
-            this.chartFrequencyHistogram.Titles.Add(title4);
+            title16.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title16.Name = "titleFrequencyHistogram";
+            title16.Text = "Гістограма";
+            this.chartFrequencyHistogram.Titles.Add(title16);
             // 
             // chartFrequencyRange
             // 
             this.chartFrequencyRange.BorderlineColor = System.Drawing.Color.Black;
             this.chartFrequencyRange.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea5.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea5.AxisX.ScaleBreakStyle.Enabled = true;
-            chartArea5.AxisX.ScaleBreakStyle.LineWidth = 5;
-            chartArea5.AxisX.ScaleView.MinSizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea5.AxisX.ScaleView.Size = 7D;
-            chartArea5.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            chartArea5.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll;
-            chartArea5.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            chartArea5.AxisX.ScrollBar.Size = 20D;
-            chartArea5.Name = "ChartAreaFrequencyRange";
-            this.chartFrequencyRange.ChartAreas.Add(chartArea5);
+            chartArea17.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea17.AxisX.ScaleBreakStyle.Enabled = true;
+            chartArea17.AxisX.ScaleBreakStyle.LineWidth = 5;
+            chartArea17.AxisX.ScaleView.MinSizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea17.AxisX.ScaleView.Size = 7D;
+            chartArea17.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            chartArea17.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll;
+            chartArea17.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            chartArea17.AxisX.ScrollBar.Size = 20D;
+            chartArea17.Name = "ChartAreaFrequencyRange";
+            this.chartFrequencyRange.ChartAreas.Add(chartArea17);
             this.chartFrequencyRange.Location = new System.Drawing.Point(263, 200);
             this.chartFrequencyRange.Name = "chartFrequencyRange";
             this.chartFrequencyRange.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
             this.chartFrequencyRange.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.Red};
-            series5.BorderWidth = 5;
-            series5.ChartArea = "ChartAreaFrequencyRange";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Name = "Frequency range";
-            series5.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series5.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
-            this.chartFrequencyRange.Series.Add(series5);
+            series17.BorderWidth = 5;
+            series17.ChartArea = "ChartAreaFrequencyRange";
+            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series17.Name = "Frequency range";
+            series17.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series17.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32;
+            this.chartFrequencyRange.Series.Add(series17);
             this.chartFrequencyRange.Size = new System.Drawing.Size(245, 259);
             this.chartFrequencyRange.TabIndex = 14;
             this.chartFrequencyRange.Text = "chartFrequencyRange";
-            title5.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title5.Name = "titleFrequencyRange";
-            title5.Text = "Полігон";
-            this.chartFrequencyRange.Titles.Add(title5);
+            title17.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title17.Name = "titleFrequencyRange";
+            title17.Text = "Полігон";
+            this.chartFrequencyRange.Titles.Add(title17);
             // 
             // chartDistributionFunction
             // 
             this.chartDistributionFunction.BorderlineColor = System.Drawing.Color.Black;
             this.chartDistributionFunction.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-            chartArea6.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
-            chartArea6.AxisX.ScaleBreakStyle.Enabled = true;
-            chartArea6.AxisX.ScaleBreakStyle.LineWidth = 5;
-            chartArea6.AxisX.ScaleView.MinSizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
-            chartArea6.AxisX.ScaleView.Size = 7D;
-            chartArea6.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            chartArea6.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll;
-            chartArea6.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            chartArea6.AxisX.ScrollBar.Size = 20D;
-            chartArea6.Name = "ChartAreaDistributionFunction";
-            this.chartDistributionFunction.ChartAreas.Add(chartArea6);
+            chartArea18.AlignmentOrientation = ((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations)((System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical | System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal)));
+            chartArea18.AxisX.MajorGrid.Enabled = false;
+            chartArea18.AxisX.ScaleBreakStyle.Enabled = true;
+            chartArea18.AxisX.ScaleBreakStyle.LineWidth = 5;
+            chartArea18.AxisX.ScaleView.MinSizeType = System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Number;
+            chartArea18.AxisX.ScaleView.Size = 7D;
+            chartArea18.AxisX.ScrollBar.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            chartArea18.AxisX.ScrollBar.ButtonStyle = System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonStyles.SmallScroll;
+            chartArea18.AxisX.ScrollBar.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            chartArea18.AxisX.ScrollBar.Size = 20D;
+            chartArea18.AxisY.MajorGrid.Enabled = false;
+            chartArea18.Name = "ChartAreaDistributionFunction";
+            this.chartDistributionFunction.ChartAreas.Add(chartArea18);
             this.chartDistributionFunction.Location = new System.Drawing.Point(514, 200);
             this.chartDistributionFunction.Name = "chartDistributionFunction";
             this.chartDistributionFunction.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             this.chartDistributionFunction.PaletteCustomColors = new System.Drawing.Color[] {
         System.Drawing.Color.Green};
-            series6.BorderWidth = 3;
-            series6.ChartArea = "ChartAreaDistributionFunction";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StepLine;
-            series6.Name = "Distribution function";
-            series6.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            series6.YValuesPerPoint = 6;
-            series6.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
-            this.chartDistributionFunction.Series.Add(series6);
+            series18.BorderWidth = 3;
+            series18.ChartArea = "ChartAreaDistributionFunction";
+            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.StepLine;
+            series18.Name = "Distribution function";
+            series18.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            series18.YValuesPerPoint = 6;
+            series18.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double;
+            this.chartDistributionFunction.Series.Add(series18);
             this.chartDistributionFunction.Size = new System.Drawing.Size(245, 259);
             this.chartDistributionFunction.TabIndex = 15;
             this.chartDistributionFunction.Text = "chartDistributionFunction";
-            title6.Alignment = System.Drawing.ContentAlignment.TopCenter;
-            title6.Name = "titleDistributionFunction";
-            title6.Text = "Емпірична функція розподілу";
-            this.chartDistributionFunction.Titles.Add(title6);
+            title18.Alignment = System.Drawing.ContentAlignment.TopCenter;
+            title18.Name = "titleDistributionFunction";
+            title18.Text = "Емпірична функція розподілу";
+            this.chartDistributionFunction.Titles.Add(title18);
             // 
             // labelMedian
             // 
@@ -638,14 +640,14 @@
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(143, 6);
             // 
             // saveToolStripMenuItem
             // 
@@ -653,19 +655,19 @@
             this.saveToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
             this.saveToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click_1);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
@@ -1297,7 +1299,7 @@
             // 
             // textBoxAlpha
             // 
-            this.textBoxAlpha.Location = new System.Drawing.Point(543, 542);
+            this.textBoxAlpha.Location = new System.Drawing.Point(568, 542);
             this.textBoxAlpha.Name = "textBoxAlpha";
             this.textBoxAlpha.Size = new System.Drawing.Size(58, 20);
             this.textBoxAlpha.TabIndex = 58;
@@ -1306,11 +1308,11 @@
             // 
             this.labelAlpha.AutoSize = true;
             this.labelAlpha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAlpha.Location = new System.Drawing.Point(519, 540);
+            this.labelAlpha.Location = new System.Drawing.Point(524, 542);
             this.labelAlpha.Name = "labelAlpha";
-            this.labelAlpha.Size = new System.Drawing.Size(18, 20);
+            this.labelAlpha.Size = new System.Drawing.Size(48, 20);
             this.labelAlpha.TabIndex = 57;
-            this.labelAlpha.Text = "a";
+            this.labelAlpha.Text = "alpha";
             // 
             // labelR
             // 
@@ -1336,7 +1338,7 @@
             // 
             this.labelCriticalX.AutoSize = true;
             this.labelCriticalX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCriticalX.Location = new System.Drawing.Point(671, 600);
+            this.labelCriticalX.Location = new System.Drawing.Point(707, 600);
             this.labelCriticalX.Name = "labelCriticalX";
             this.labelCriticalX.Size = new System.Drawing.Size(41, 20);
             this.labelCriticalX.TabIndex = 61;
@@ -1346,7 +1348,7 @@
             // 
             this.labelCriticalXValue.AutoSize = true;
             this.labelCriticalXValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelCriticalXValue.Location = new System.Drawing.Point(741, 600);
+            this.labelCriticalXValue.Location = new System.Drawing.Point(764, 600);
             this.labelCriticalXValue.Name = "labelCriticalXValue";
             this.labelCriticalXValue.Size = new System.Drawing.Size(18, 20);
             this.labelCriticalXValue.TabIndex = 62;

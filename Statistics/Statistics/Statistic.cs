@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Statistics
 {
@@ -31,6 +26,7 @@ namespace Statistics
             copydiscretefrequencyTable = new Dictionary<double, int>();
             variationSeries = new List<double>();
             labelMoment.Text = "\u03BC";
+            labelAlpha.Text = "\u03B1";
         }
 
         // METHODS
@@ -63,13 +59,14 @@ namespace Statistics
             return variationSeries.Average();
         }
 
+        #endregion
+
+        #region Scattering statistics
         private double CalculateDeviation(double average)
         {
             return variationSeries.Sum(first => Math.Pow(first - average, 2));
         }
-        #endregion
 
-        #region Scattering statistics
         private double CalculateVariance(double deviation)
         {
             return deviation / (variationSeries.Count - 1);
@@ -82,7 +79,7 @@ namespace Statistics
 
         private double CalculateSampleRange()
         {
-            return variationSeries.Max() - variationSeries.Min();
+            return variationSeries.Last() - variationSeries.First();
         }
 
         private double CalculateVariation(double standart, double average)
@@ -567,6 +564,27 @@ namespace Statistics
             step = LoadUninterruptedSample(ref uninterruptedFrequencyTable);
             listFrequencyTable = uninterruptedFrequencyTable.ToList();
 
+            int j = 0;
+            while (j != listFrequencyTable.Count)
+            {
+                if (listFrequencyTable[j].Value < 10)
+                {
+                    if (j != listFrequencyTable.Count - 1)
+                    {
+                        listFrequencyTable[j + 1] = new KeyValuePair<double, int>(((listFrequencyTable[j + 1].Key + listFrequencyTable[j].Key) / 2),
+                            listFrequencyTable[j + 1].Value + listFrequencyTable[j].Value);
+                        listFrequencyTable.RemoveAt(j);
+                    }
+                    else
+                    {
+                        listFrequencyTable[j - 1] = new KeyValuePair<double, int>(((listFrequencyTable[j - 1].Key + listFrequencyTable[j].Key) / 2),
+                            listFrequencyTable[j - 1].Value + listFrequencyTable[j].Value);
+                        listFrequencyTable.RemoveAt(j);
+                    }
+                    --j;
+                }
+                ++j;
+            }
             int count = variationSeries.Count;
             double result = 0, probability = 0, elem = 0;
             for (int i = 0; i < listFrequencyTable.Count; ++i)  
@@ -594,25 +612,30 @@ namespace Statistics
         {
             if (textBoxAlpha.Text != "")
             {
-                //buttonUpdateSample.Select();
-
-                double alpha = double.Parse(textBoxAlpha.Text);
-                int classesQuantity = (int)Math.Ceiling(Math.Log(variationSeries.Count, 2));
-                labelRValue.Text = (classesQuantity - 1).ToString();
-
-                double empiricX = CalculatePearsonCriterion(classesQuantity);
-                labelEmpiricXValue.Text = empiricX.ToString();
-
-                double criticalX = MathNet.Numerics.Distributions.ChiSquared.InvCDF(classesQuantity - 1, 1 - alpha);
-                labelCriticalXValue.Text = criticalX.ToString();
-
-                if (empiricX < criticalX)
+                if (variationSeries.Count >= 5) 
                 {
-                    labelIsAccepted.Text = "Так";
+                    double alpha = double.Parse(textBoxAlpha.Text);
+                    int classesQuantity = (int)Math.Ceiling(Math.Log(variationSeries.Count, 2));
+                    labelRValue.Text = (classesQuantity - 1).ToString();
+
+                    double empiricX = CalculatePearsonCriterion(classesQuantity);
+                    labelEmpiricXValue.Text = empiricX.ToString();
+
+                    double criticalX = MathNet.Numerics.Distributions.ChiSquared.InvCDF(classesQuantity - 1, 1 - alpha);
+                    labelCriticalXValue.Text = criticalX.ToString();
+
+                    if (empiricX < criticalX)
+                    {
+                        labelIsAccepted.Text = "Так";
+                    }
+                    else
+                    {
+                        labelIsAccepted.Text = "Ні";
+                    }
                 }
                 else
                 {
-                    labelIsAccepted.Text = "Ні";
+                    MessageBox.Show("N < 5.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             else
@@ -640,4 +663,3 @@ namespace Statistics
         }
     }
 }
-
