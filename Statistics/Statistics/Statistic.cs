@@ -555,7 +555,7 @@ namespace Statistics
             }
         }
 
-        private double CalculatePearsonCriterion(int classesQuantity)
+        private double CalculatePearsonCriterion(out int classesQuantity)
         {
             double step = 0;
             List<KeyValuePair<double, int>> listFrequencyTable;
@@ -585,6 +585,7 @@ namespace Statistics
                 }
                 ++j;
             }
+            classesQuantity = listFrequencyTable.Count;
             int count = variationSeries.Count;
             double result = 0, probability = 0, elem = 0;
             for (int i = 0; i < listFrequencyTable.Count; ++i)  
@@ -616,10 +617,11 @@ namespace Statistics
                 {
                     double alpha = double.Parse(textBoxAlpha.Text);
                     int classesQuantity = (int)Math.Ceiling(Math.Log(variationSeries.Count, 2));
-                    labelRValue.Text = (classesQuantity - 1).ToString();
 
-                    double empiricX = CalculatePearsonCriterion(classesQuantity);
+                    double empiricX = CalculatePearsonCriterion(out classesQuantity);
                     labelEmpiricXValue.Text = empiricX.ToString();
+
+                    labelRValue.Text = (classesQuantity - 1).ToString();
 
                     double criticalX = MathNet.Numerics.Distributions.ChiSquared.InvCDF(classesQuantity - 1, 1 - alpha);
                     labelCriticalXValue.Text = criticalX.ToString();
