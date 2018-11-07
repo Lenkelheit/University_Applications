@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HillAndXORCipher", "HillAndXORCipher\HillAndXORCipher.csproj", "{DCB7209D-DB7C-4C36-A3DB-67BF128E2214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainProgram", "MainProgram\MainProgram.csproj", "{203F6E2C-7C0A-45FD-A0CF-0E6E2AE5D114}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCB7209D-DB7C-4C36-A3DB-67BF128E2214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCB7209D-DB7C-4C36-A3DB-67BF128E2214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCB7209D-DB7C-4C36-A3DB-67BF128E2214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCB7209D-DB7C-4C36-A3DB-67BF128E2214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{203F6E2C-7C0A-45FD-A0CF-0E6E2AE5D114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{203F6E2C-7C0A-45FD-A0CF-0E6E2AE5D114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{203F6E2C-7C0A-45FD-A0CF-0E6E2AE5D114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{203F6E2C-7C0A-45FD-A0CF-0E6E2AE5D114}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E0DD9F9-ADB0-4A18-BE63-62804ED549C2}
+	EndGlobalSection
+EndGlobal
