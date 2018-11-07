@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BBSCipher", "BBSCipher\BBSCipher.csproj", "{199EA231-CE79-42CE-99B0-BB4AAEBDB5AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainProgram", "MainProgram\MainProgram.csproj", "{5D86D1E7-97B0-4D80-A87D-499CA858BA1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{199EA231-CE79-42CE-99B0-BB4AAEBDB5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{199EA231-CE79-42CE-99B0-BB4AAEBDB5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{199EA231-CE79-42CE-99B0-BB4AAEBDB5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{199EA231-CE79-42CE-99B0-BB4AAEBDB5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D86D1E7-97B0-4D80-A87D-499CA858BA1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D86D1E7-97B0-4D80-A87D-499CA858BA1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D86D1E7-97B0-4D80-A87D-499CA858BA1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D86D1E7-97B0-4D80-A87D-499CA858BA1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {26088B84-51C7-4040-AC13-D742667428DB}
+	EndGlobalSection
+EndGlobal
