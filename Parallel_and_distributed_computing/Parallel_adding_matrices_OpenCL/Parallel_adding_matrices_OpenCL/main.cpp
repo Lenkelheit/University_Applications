@@ -6,7 +6,8 @@
 
 using namespace std;
 
-void simple_sum_matrix(int** first_matrix, int** second_matrix, int** sum_matrix_result, size_t size, size_t index_column = 0, size_t threads_step = 1)
+void simple_sum_matrix(int** first_matrix, int** second_matrix, int** sum_matrix_result, size_t size,
+					   size_t index_column = 0, size_t threads_step = 1)
 {
 	for (size_t i = 0; i < size; ++i)
 	{
@@ -30,7 +31,7 @@ void parallel_sum_matrix(int** first_matrix, int** second_matrix, int** sum_matr
 	}
 }
 
-void sum_matrix_OpenCL(int* first_matrix, int* second_matrix, int* sum_matrix_result, size_t size, size_t threads_amount)
+void sum_matrix_OpenCL(int* first_matrix, int* second_matrix, int* sum_matrix_result, size_t size)
 {
 	const char *source_code =
 		"__kernel void OpenCLAddingMatrix(__global int* a, __global int* b, __global int* result, const int quantity) \n"\
@@ -196,7 +197,7 @@ void main()
 		}
 	}
 
-	sum_matrix_OpenCL(a_matrix, b_matrix, res_matrix, size, threads_amount);
+	sum_matrix_OpenCL(a_matrix, b_matrix, res_matrix, size);
 
 	for (size_t i = 0; i < size; ++i)
 	{
