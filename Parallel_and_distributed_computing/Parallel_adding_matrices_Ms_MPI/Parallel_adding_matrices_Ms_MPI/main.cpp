@@ -20,7 +20,8 @@ void simple_sum_matrix(int first_matrix[N][N], int second_matrix[N][N], int sum_
 	}
 }
 
-void parallel_sum_matrix(int first_matrix[N][N], int second_matrix[N][N], int sum_matrix_result[N][N], size_t threads_amount = 1)
+void parallel_sum_matrix(int first_matrix[N][N], int second_matrix[N][N], int sum_matrix_result[N][N],
+	size_t threads_amount = 1)
 {
 	thread* thread_arr = new thread[threads_amount];
 	for (size_t i = 0; i < threads_amount; ++i)
@@ -165,8 +166,10 @@ int main(int argc, char * argv[])
 
 		// All processes except one with id = 0 receive from process with id = 0 
 		// parts of matrices for processing.
-		MPI_Irecv(&first_matr[0][0], rows_amount_in_process*columns_amount, MPI_INT, 0, tag_first_matr, MPI_COMM_WORLD, &requests[7]);
-		MPI_Irecv(&second_matr[0][0], rows_amount_in_process*columns_amount, MPI_INT, 0, tag_second_matr, MPI_COMM_WORLD, &requests[8]);
+		MPI_Irecv(&first_matr[0][0], rows_amount_in_process*columns_amount, MPI_INT, 0,
+			tag_first_matr, MPI_COMM_WORLD, &requests[7]);
+		MPI_Irecv(&second_matr[0][0], rows_amount_in_process*columns_amount, MPI_INT, 0,
+			tag_second_matr, MPI_COMM_WORLD, &requests[8]);
 
 		// Waits when request for receiving will finish.
 		MPI_Wait(&requests[7], &status);
@@ -183,7 +186,8 @@ int main(int argc, char * argv[])
 
 		// All processes except one with id = 0 send to process with id = 0
 		// parts of matrices that they have processed.
-		MPI_Isend(&result_matr_mpi[0][0], rows_amount_in_process*columns_amount, MPI_INT, 0, tag_result_matr, MPI_COMM_WORLD, &requests[9]);
+		MPI_Isend(&result_matr_mpi[0][0], rows_amount_in_process*columns_amount, MPI_INT, 0,
+			tag_result_matr, MPI_COMM_WORLD, &requests[9]);
 
 		// Waits when request for sending will finish.
 		MPI_Wait(&requests[9], &status);
