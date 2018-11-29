@@ -7,6 +7,9 @@ namespace DrawingFunctionsInterpolation
     public partial class FormFunctionsInterpolation : Form
     {
         // FIELDS
+        private double a;
+        private double b;
+        private int n;
         private InterpolationByNewtonMethod interpolationByNewton;
         private InterpolationByGaussMethod interpolationByGauss;
 
@@ -15,12 +18,16 @@ namespace DrawingFunctionsInterpolation
         {
             InitializeComponent();
 
-            labelA.Text += InterpolationByNewtonMethod.a;
-            labelB.Text += InterpolationByNewtonMethod.b;
-            labelN.Text += InterpolationByNewtonMethod.N;
+            a = 1.0;
+            b = 2.0;
+            n = 20;
 
-            interpolationByNewton = new InterpolationByNewtonMethod();
-            interpolationByGauss = new InterpolationByGaussMethod();
+            labelA.Text += a;
+            labelB.Text += b;
+            labelN.Text += n;
+
+            interpolationByNewton = new InterpolationByNewtonMethod(a, b, n);
+            interpolationByGauss = new InterpolationByGaussMethod(a, b, n);
         }
 
         // METHODS
@@ -31,7 +38,7 @@ namespace DrawingFunctionsInterpolation
                 chartInterpolation.Series[i].Points.Clear();
             }
             int numberIterN, numberIterG;
-            for (double i = InterpolationByNewtonMethod.a; i <= InterpolationByNewtonMethod.b; i += 0.01)
+            for (double i = a; i <= b; i += 0.01)
             {
                 chartInterpolation.Series[0].Points.AddXY(i, interpolationByNewton.BackInterpolationNewtonMethod(i, eps, out numberIterN));
 

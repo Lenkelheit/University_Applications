@@ -5,12 +5,10 @@ namespace InterpolationByNewtonAndGaussMethod
 {
     public class InterpolationByGaussMethod
     {
-        // CONST
-        public const double a = 1.0;
-        public const double b = 2.0;
-        public const int N = 20;
-
         // FIELDS
+        private double a;
+        private double b;
+        private int n;
         private double h;
         private double[][] differences;
 
@@ -18,9 +16,13 @@ namespace InterpolationByNewtonAndGaussMethod
         public List<KeyValuePair<double, double>> Nodes { get; private set; }
 
         // CONSTRUCTORS
-        public InterpolationByGaussMethod()
+        public InterpolationByGaussMethod(double a = 1.0, double b = 2.0, int n = 20)
         {
-            h = (b - a) / N;
+            this.a = a;
+            this.b = b;
+            this.n = n;
+
+            h = (b - a) / n;
             Nodes = new List<KeyValuePair<double, double>>();
             CreateNodes();
 
@@ -43,7 +45,7 @@ namespace InterpolationByNewtonAndGaussMethod
         private void CreateNodes()
         {
             double x = 0;
-            for (int i = 0; i <= N; ++i)
+            for (int i = 0; i <= n; ++i)
             {
                 x = a + i * h;
                 Nodes.Add(new KeyValuePair<double, double>(x, XLnXFunction(x)));
