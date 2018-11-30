@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using InterpolationByNewtonAndGaussMethod;
 
@@ -45,6 +45,7 @@ namespace DrawingFunctionsInterpolation
                 chartInterpolation.Series[1].Points.AddXY(i, interpolationByGauss.BackInterpolationGaussMethod(i, eps, out numberIterG));
             }
 
+            // function nodes
             for (int i = 0; i < interpolationByGauss.Nodes.Count; ++i) 
             {
                 chartInterpolation.Series[2].Points.AddXY(interpolationByGauss.Nodes[i].Key, interpolationByGauss.Nodes[i].Value);
