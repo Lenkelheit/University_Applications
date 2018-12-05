@@ -109,7 +109,7 @@ int main(int argc, char * argv[])
 
 		//show_matrix(result_matr_mpi, size);
 
-		int threads_amount = 2;
+		int threads_amount = processes_amount;
 		start_time = MPI_Wtime();
 		parallel_sum_matrix(first_matr, second_matr, result_matr_mpi, size, threads_amount);
 		cout << "Parallel sum matrices time with " << threads_amount << " threads : " << MPI_Wtime() - start_time << endl;

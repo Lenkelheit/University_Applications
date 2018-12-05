@@ -80,11 +80,6 @@ int main(int argc, char * argv[])
 
 	if (process_id == 0)
 	{
-		cout << argc << endl;
-		for (int i = 0; i < argc; ++i)
-		{
-			cout << argv[i] << '\t';
-		}
 		cout << endl << "Matrices dimension: " << N << " x " << N << endl;
 
 		// It will do the process with id = 0.
@@ -100,13 +95,10 @@ int main(int argc, char * argv[])
 
 		//show_matrix(result_matr_mpi);
 
-		int threads_amount;
-		cout << "Input threads amount: ";
-		cin >> threads_amount;
-
+		int threads_amount = processes_amount;
 		start_time = MPI_Wtime();
 		parallel_sum_matrix(first_matr, second_matr, result_matr_mpi, threads_amount);
-		cout << "Parallel sum matrices time: " << MPI_Wtime() - start_time << endl;
+		cout << "Parallel sum matrices time with " << threads_amount << " threads : " << MPI_Wtime() - start_time << endl;
 
 		//show_matrix(result_matr_mpi);
 
@@ -156,6 +148,8 @@ int main(int argc, char * argv[])
 		cout << "MPI sum matrices time: " << MPI_Wtime() - start_time << endl;
 
 		//show_matrix(result_matr_mpi);
+
+		system("pause");
 	}
 	else
 	{
@@ -201,6 +195,4 @@ int main(int argc, char * argv[])
 	}
 
 	MPI_Finalize();
-
-	system("pause");
 }
