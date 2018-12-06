@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace DijkstrasAlgorithmInThreads
 {
@@ -59,7 +59,8 @@ namespace DijkstrasAlgorithmInThreads
 
                 for (int v = 0; v < verticesCount; ++v)
                 {
-                    if (!shortestPathTreeSet[v] && graph[u, v] != 0 && Distance[u] != int.MaxValue && Distance[u] + graph[u, v] < Distance[v])
+                    if (!shortestPathTreeSet[v] && graph[u, v] != 0
+                        && Distance[u] != int.MaxValue && Distance[u] + graph[u, v] < Distance[v])
                     {
                         Distance[v] = Distance[u] + graph[u, v];
                     }
