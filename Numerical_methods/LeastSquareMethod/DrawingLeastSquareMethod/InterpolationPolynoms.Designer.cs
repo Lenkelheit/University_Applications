@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series16 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series17 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series18 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series13 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series14 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.labelGaussError = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.labelNewtonError = new System.Windows.Forms.Label();
@@ -89,6 +89,8 @@
             this.buttonCalculate = new System.Windows.Forms.Button();
             this.labelB = new System.Windows.Forms.Label();
             this.labelN = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxL2Accuracy = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -568,52 +570,52 @@
             // 
             // chartInterpolationByNewton
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chartInterpolationByNewton.ChartAreas.Add(chartArea8);
+            chartArea5.Name = "ChartArea1";
+            this.chartInterpolationByNewton.ChartAreas.Add(chartArea5);
             this.chartInterpolationByNewton.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend8.Name = "Legend1";
-            this.chartInterpolationByNewton.Legends.Add(legend8);
+            legend5.Name = "Legend1";
+            this.chartInterpolationByNewton.Legends.Add(legend5);
             this.chartInterpolationByNewton.Location = new System.Drawing.Point(3, 3);
             this.chartInterpolationByNewton.Name = "chartInterpolationByNewton";
-            series15.BorderWidth = 5;
-            series15.ChartArea = "ChartArea1";
-            series15.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series15.Legend = "Legend1";
-            series15.MarkerSize = 6;
-            series15.Name = "Newton\\ninterpolation";
-            series16.ChartArea = "ChartArea1";
-            series16.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-            series16.Legend = "Legend1";
-            series16.MarkerSize = 8;
-            series16.Name = "y = x*ln(x)";
-            this.chartInterpolationByNewton.Series.Add(series15);
-            this.chartInterpolationByNewton.Series.Add(series16);
+            series9.BorderWidth = 5;
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Legend = "Legend1";
+            series9.MarkerSize = 6;
+            series9.Name = "Newton\\ninterpolation";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+            series10.Legend = "Legend1";
+            series10.MarkerSize = 8;
+            series10.Name = "y = x*ln(x)";
+            this.chartInterpolationByNewton.Series.Add(series9);
+            this.chartInterpolationByNewton.Series.Add(series10);
             this.chartInterpolationByNewton.Size = new System.Drawing.Size(341, 295);
             this.chartInterpolationByNewton.TabIndex = 0;
             this.chartInterpolationByNewton.Text = "chart1";
             // 
             // chartInterpolationByGauss
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chartInterpolationByGauss.ChartAreas.Add(chartArea9);
+            chartArea6.Name = "ChartArea1";
+            this.chartInterpolationByGauss.ChartAreas.Add(chartArea6);
             this.chartInterpolationByGauss.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend9.Name = "Legend1";
-            this.chartInterpolationByGauss.Legends.Add(legend9);
+            legend6.Name = "Legend1";
+            this.chartInterpolationByGauss.Legends.Add(legend6);
             this.chartInterpolationByGauss.Location = new System.Drawing.Point(350, 3);
             this.chartInterpolationByGauss.Name = "chartInterpolationByGauss";
-            series17.BorderWidth = 5;
-            series17.ChartArea = "ChartArea1";
-            series17.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series17.Legend = "Legend1";
-            series17.MarkerSize = 6;
-            series17.Name = "Gauss\\ninterpolation";
-            series18.ChartArea = "ChartArea1";
-            series18.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-            series18.Legend = "Legend1";
-            series18.MarkerSize = 8;
-            series18.Name = "y = x*ln(x)";
-            this.chartInterpolationByGauss.Series.Add(series17);
-            this.chartInterpolationByGauss.Series.Add(series18);
+            series11.BorderWidth = 5;
+            series11.ChartArea = "ChartArea1";
+            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series11.Legend = "Legend1";
+            series11.MarkerSize = 6;
+            series11.Name = "Gauss\\ninterpolation";
+            series12.ChartArea = "ChartArea1";
+            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+            series12.Legend = "Legend1";
+            series12.MarkerSize = 8;
+            series12.Name = "y = x*ln(x)";
+            this.chartInterpolationByGauss.Series.Add(series11);
+            this.chartInterpolationByGauss.Series.Add(series12);
             this.chartInterpolationByGauss.Size = new System.Drawing.Size(342, 295);
             this.chartInterpolationByGauss.TabIndex = 1;
             this.chartInterpolationByGauss.Text = "chart2";
@@ -637,32 +639,34 @@
             // 
             // chartLeastSquaresMethod
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chartLeastSquaresMethod.ChartAreas.Add(chartArea7);
+            chartArea4.Name = "ChartArea1";
+            this.chartLeastSquaresMethod.ChartAreas.Add(chartArea4);
             this.chartLeastSquaresMethod.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend7.Name = "Legend1";
-            this.chartLeastSquaresMethod.Legends.Add(legend7);
+            legend4.Name = "Legend1";
+            this.chartLeastSquaresMethod.Legends.Add(legend4);
             this.chartLeastSquaresMethod.Location = new System.Drawing.Point(3, 3);
             this.chartLeastSquaresMethod.Name = "chartLeastSquaresMethod";
-            series13.BorderWidth = 5;
-            series13.ChartArea = "ChartArea1";
-            series13.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series13.Legend = "Legend1";
-            series13.MarkerSize = 6;
-            series13.Name = "Least squares\\nmethod";
-            series14.ChartArea = "ChartArea1";
-            series14.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
-            series14.Legend = "Legend1";
-            series14.MarkerSize = 8;
-            series14.Name = "y = x*ln(x)";
-            this.chartLeastSquaresMethod.Series.Add(series13);
-            this.chartLeastSquaresMethod.Series.Add(series14);
+            series7.BorderWidth = 5;
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.MarkerSize = 6;
+            series7.Name = "Least squares\\nmethod";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastPoint;
+            series8.Legend = "Legend1";
+            series8.MarkerSize = 8;
+            series8.Name = "y = x*ln(x)";
+            this.chartLeastSquaresMethod.Series.Add(series7);
+            this.chartLeastSquaresMethod.Series.Add(series8);
             this.chartLeastSquaresMethod.Size = new System.Drawing.Size(341, 296);
             this.chartLeastSquaresMethod.TabIndex = 2;
             this.chartLeastSquaresMethod.Text = "chart3";
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.textBoxL2Accuracy);
             this.panel2.Controls.Add(this.labelInputX);
             this.panel2.Controls.Add(this.labelInputEpsylon);
             this.panel2.Controls.Add(this.textBoxX);
@@ -680,7 +684,7 @@
             // labelInputX
             // 
             this.labelInputX.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelInputX.Location = new System.Drawing.Point(50, 95);
+            this.labelInputX.Location = new System.Drawing.Point(62, 104);
             this.labelInputX.Name = "labelInputX";
             this.labelInputX.Size = new System.Drawing.Size(83, 34);
             this.labelInputX.TabIndex = 28;
@@ -692,7 +696,7 @@
             this.labelInputEpsylon.AutoEllipsis = true;
             this.labelInputEpsylon.AutoSize = true;
             this.labelInputEpsylon.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelInputEpsylon.Location = new System.Drawing.Point(43, 147);
+            this.labelInputEpsylon.Location = new System.Drawing.Point(55, 156);
             this.labelInputEpsylon.Name = "labelInputEpsylon";
             this.labelInputEpsylon.Size = new System.Drawing.Size(90, 16);
             this.labelInputEpsylon.TabIndex = 37;
@@ -702,7 +706,7 @@
             // textBoxX
             // 
             this.textBoxX.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxX.Location = new System.Drawing.Point(166, 99);
+            this.textBoxX.Location = new System.Drawing.Point(178, 108);
             this.textBoxX.Name = "textBoxX";
             this.textBoxX.Size = new System.Drawing.Size(100, 26);
             this.textBoxX.TabIndex = 26;
@@ -711,7 +715,7 @@
             // textBoxEpsylon
             // 
             this.textBoxEpsylon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxEpsylon.Location = new System.Drawing.Point(166, 147);
+            this.textBoxEpsylon.Location = new System.Drawing.Point(178, 156);
             this.textBoxEpsylon.Name = "textBoxEpsylon";
             this.textBoxEpsylon.Size = new System.Drawing.Size(100, 26);
             this.textBoxEpsylon.TabIndex = 27;
@@ -730,7 +734,7 @@
             // buttonCalculate
             // 
             this.buttonCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonCalculate.Location = new System.Drawing.Point(73, 194);
+            this.buttonCalculate.Location = new System.Drawing.Point(82, 232);
             this.buttonCalculate.Name = "buttonCalculate";
             this.buttonCalculate.Size = new System.Drawing.Size(150, 34);
             this.buttonCalculate.TabIndex = 29;
@@ -757,6 +761,27 @@
             this.labelN.TabIndex = 32;
             this.labelN.Text = "N = ";
             this.labelN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label7
+            // 
+            this.label7.AutoEllipsis = true;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(15, 206);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(152, 16);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Input L^2 error accuracy:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBoxL2Accuracy
+            // 
+            this.textBoxL2Accuracy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBoxL2Accuracy.Location = new System.Drawing.Point(178, 200);
+            this.textBoxL2Accuracy.Name = "textBoxL2Accuracy";
+            this.textBoxL2Accuracy.Size = new System.Drawing.Size(100, 26);
+            this.textBoxL2Accuracy.TabIndex = 38;
+            this.textBoxL2Accuracy.Text = "1e-3";
             // 
             // InterpolationPolynoms
             // 
@@ -842,6 +867,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label labelL2NewtonError;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBoxL2Accuracy;
     }
 }
 

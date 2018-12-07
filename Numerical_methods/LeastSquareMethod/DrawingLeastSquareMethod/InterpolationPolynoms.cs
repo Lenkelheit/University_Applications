@@ -79,7 +79,7 @@ namespace DrawingLeastSquareMethod
 
         private void buttonCalculate_Click(object sender, EventArgs e)
         {
-            double inputX, eps;
+            double inputX, eps, L2Eps;
             if (!double.TryParse(textBoxX.Text, out inputX))
             {
                 textBoxX.Text = "";
@@ -89,6 +89,11 @@ namespace DrawingLeastSquareMethod
             {
                 textBoxEpsylon.Text = "";
                 MessageBox.Show("Cannot convert eps to numeric.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!double.TryParse(textBoxL2Accuracy.Text, out L2Eps))
+            {
+                textBoxL2Accuracy.Text = "";
+                MessageBox.Show("Cannot convert L^2 error eps to numeric.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -124,11 +129,11 @@ namespace DrawingLeastSquareMethod
                 // Errors in L^2([a, b])
                 MathFunc func = (x) => x * Math.Log(x);
 
-                labelL2NewtonError.Text = errorInL2.CalculateFuncError(a, b, func,
+                labelL2NewtonError.Text = errorInL2.CalculateFuncError(a, b, L2Eps, func,
                     (double X) => interpolationByNewton.BackInterpolationNewtonMethod(X, eps, out numberIterNewtonMethod)).ToString();
-                labelL2GaussError.Text = errorInL2.CalculateFuncError(a, b, func,
+                labelL2GaussError.Text = errorInL2.CalculateFuncError(a, b, L2Eps, func,
                     (double X) => interpolationByGauss.BackInterpolationGaussMethod(X, eps, out numberIterGaussMethod)).ToString();
-                labelL2LeastSquaresError.Text = errorInL2.CalculateFuncError(a, b, func,
+                labelL2LeastSquaresError.Text = errorInL2.CalculateFuncError(a, b, L2Eps, func,
                     (double X) => leastSquaresMethod.GeneralPolynom(X, eps, out numberIterLeastSquaresMethod)).ToString();
 
                 DrawNewtonGaussLeastSquareMethodPolinom(eps);
