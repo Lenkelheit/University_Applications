@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeastSquareMethod", "LeastSquareMethod\LeastSquareMethod.csproj", "{65AAE861-972D-4294-B607-BC04505560AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingLeastSquareMethod", "DrawingLeastSquareMethod\DrawingLeastSquareMethod.csproj", "{44BA5CD1-7A3A-4BA6-B8FD-701399D2883F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65AAE861-972D-4294-B607-BC04505560AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65AAE861-972D-4294-B607-BC04505560AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65AAE861-972D-4294-B607-BC04505560AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65AAE861-972D-4294-B607-BC04505560AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BA5CD1-7A3A-4BA6-B8FD-701399D2883F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BA5CD1-7A3A-4BA6-B8FD-701399D2883F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BA5CD1-7A3A-4BA6-B8FD-701399D2883F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BA5CD1-7A3A-4BA6-B8FD-701399D2883F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86B84EFF-A6C1-4DF7-82C2-192B2C32FC1E}
+	EndGlobalSection
+EndGlobal
