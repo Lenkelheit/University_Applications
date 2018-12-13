@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using IterativeMethods;
 
 namespace MainProgram
@@ -36,14 +36,18 @@ namespace MainProgram
 
             SystemEquationsSolution systemEquationsSolution = new SystemEquationsSolution();
 
-            var rootOfSystemByIterativeProcess = systemEquationsSolution.IterativeProcess(point.Item1, point.Item2, e, out numOfIter);
-            Console.WriteLine($"\nIteration method:\n x: {rootOfSystemByIterativeProcess.Item1}\n y: {rootOfSystemByIterativeProcess.Item2}");
+            var rootOfSystemByIterativeProcess = systemEquationsSolution.
+                IterativeProcess(point.Item1, point.Item2, e, out numOfIter);
+            Console.WriteLine($"\nIteration method:\n x: {rootOfSystemByIterativeProcess.Item1}\n" +
+                              $" y: {rootOfSystemByIterativeProcess.Item2}");
             Console.WriteLine($"Number of iterations for iteration method: {numOfIter}");
 
-            var rootOfSystemByNewtonMethod = systemEquationsSolution.NewtonMethod(point.Item1, point.Item2, e, out numOfIter);
-            Console.WriteLine($"\nNewton method:\n x: {rootOfSystemByNewtonMethod.Item1}\n y: {rootOfSystemByNewtonMethod.Item2}");
+            var rootOfSystemByNewtonMethod = systemEquationsSolution.
+                NewtonMethod(point.Item1, point.Item2, e, out numOfIter);
+            Console.WriteLine($"\nNewton method:\n x: {rootOfSystemByNewtonMethod.Item1}\n" +
+                              $" y: {rootOfSystemByNewtonMethod.Item2}");
             Console.WriteLine($"Number of iterations for Newton method: {numOfIter}");
-
+            
             Console.ReadLine();
         }
     }
