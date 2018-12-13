@@ -1,2 +1,2 @@
-# University_Applications
+# University Applications
 Application for university.
