@@ -4,7 +4,9 @@
 {
     font-family: "SawRegular";
     src: url("../fonts/SawRegular/SawRegular.eot");
-    src: url("../fonts/SawRegular/SawRegular.eot?#iefix")format("embedded-opentype"),url("../fonts/SawRegular/SawRegular.woff") format("woff"),url("../fonts/SawRegular/SawRegular.ttf") format("truetype");
+    src: url("../fonts/SawRegular/SawRegular.eot?#iefix")
+	format("embedded-opentype"),url("../fonts/SawRegular/SawRegular.woff")
+	format("woff"),url("../fonts/SawRegular/SawRegular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
