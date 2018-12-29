@@ -3,9 +3,9 @@ using namespace std;
 
 void main()
 {
-	//ìîÿ çàäà÷à
-	//21. Ñê³ëüêè îäèíèöü òîâàðó âàðò³ñòþ k ãðí ìîæíà ïðèäáàòè íà ñóìó n
-	//ãðí ? Ñê³ëüêè ãðîøåé çàëèøèòüñÿ ?
+	//моя задача
+	//21. Скільки одиниць товару вартістю k грн можна придбати на суму n
+	//грн ? Скільки грошей залишиться ?
 	int amount_of_money, price_one_good, amount_of_goods, amount_remain_money;
 	cout << "Input amount of money: ";
 	cin >> amount_of_money;
@@ -15,9 +15,9 @@ void main()
 	{
 		mov ecx, price_one_good
 		mov eax, amount_of_money
-		cdq//ðîçøèðþþ çíà÷åííÿ ðåã³ñòðà, àáè ìàòè ìîæëèâ³ñòü çáåðåãàííÿ îñòà÷³ â³ä ä³ëåííÿ
+		cdq//розширюю значення регістра, аби мати можливість зберегання остачі від ділення
 
-		div ecx//ä³ëþ eax íà ecx, òîáòî amount_of_money/price_one_good
+		div ecx//ділю eax на ecx, тобто amount_of_money/price_one_good
 
 		mov amount_of_goods, eax
 		mov amount_remain_money, edx
@@ -38,30 +38,30 @@ void main()
 		mov ebx, 0
 		mov ecx, 400
 		mov eax, year
-		cdq//ðîçøèðþþ çíà÷åííÿ ðåã³ñòðà, àáè ìàòè ìîæëèâ³ñòü çáåðåãàííÿ îñòà÷³ â³ä ä³ëåííÿ
+		cdq//розширюю значення регістра, аби мати можливість зберегання остачі від ділення
 
-		div ecx//ä³ëþ eax íà ecx, òîáòî year/400
-		test edx, edx//ÿêùî îñòà÷à â³ä ä³ëåííÿ = 0, òîáòî ðåçóëüòàò ëîã³÷íîãî ìíîæåííÿ = 0, òî ZF = 1
+		div ecx//ділю eax на ecx, тобто year/400
+		test edx, edx//якщо остача від ділення = 0, тобто результат логічного множення = 0, то ZF = 1
 
-		jz is_leap//âèêîíàºòüñÿ, ÿêùî ZF = 1
+		jz is_leap//виконається, якщо ZF = 1
 		mov eax, year
-		cdq//ðîçøèðþþ çíà÷åííÿ ðåã³ñòðà, àáè ìàòè ìîæëèâ³ñòü çáåðåãàííÿ îñòà÷³ â³ä ä³ëåííÿ
+		cdq//розширюю значення регістра, аби мати можливість зберегання остачі від ділення
 		mov ecx, 4
-		div ecx//ä³ëþ eax íà ecx, òîáòî year/4
-		test edx, edx//ÿêùî îñòà÷à â³ä ä³ëåííÿ = 0, òîáòî ðåçóëüòàò ëîã³÷íîãî ìíîæåííÿ = 0, òî ZF = 1
-		jz maybe_leap//âèêîíàºòüñÿ, ÿêùî ZF = 1
+		div ecx//ділю eax на ecx, тобто year/4
+		test edx, edx//якщо остача від ділення = 0, тобто результат логічного множення = 0, то ZF = 1
+		jz maybe_leap//виконається, якщо ZF = 1
 		jmp result
 		is_leap :
 		mov ebx, 1
 			jmp result
 			maybe_leap :
 		mov eax, year
-			cdq//ðîçøèðþþ çíà÷åííÿ ðåã³ñòðà, àáè ìàòè ìîæëèâ³ñòü çáåðåãàííÿ îñòà÷³ â³ä ä³ëåííÿ
+			cdq//розширюю значення регістра, аби мати можливість зберегання остачі від ділення
 			mov ecx, 100
 			div ecx
-			test edx, edx//ÿêùî îñòà÷à â³ä ä³ëåííÿ = 0, òî ZF = 1
-			jz result//âèêîíàºòüñÿ, ÿêùî ZF = 1
-			jmp is_leap//ñþäè ïåðåéäó, ÿêùî ZF = 0
+			test edx, edx//якщо остача від ділення = 0, то ZF = 1
+			jz result//виконається, якщо ZF = 1
+			jmp is_leap//сюди перейду, якщо ZF = 0
 			result :
 		mov leap, ebx
 	}
@@ -73,6 +73,5 @@ void main()
 	{
 		cout << "No" << endl;
 	}
-	
 	system("pause");
 }
